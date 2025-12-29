@@ -35,11 +35,13 @@ export function Navbar() {
       <div className="container-custom flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="group relative z-50">
-          <img 
-            src="/lecorn-logo.png" 
-            alt="LeCorn Logo" 
-            className="h-12 md:h-16 w-auto group-hover:brightness-110 transition-all duration-300"
-          />
+          <div className="h-12 md:h-16 w-12 md:w-16 rounded-full overflow-hidden border-2 border-black shadow-md group-hover:shadow-lg transition-all duration-300">
+            <img 
+              src="/lecorn-circle-logo.png" 
+              alt="LeCorn Logo" 
+              className="w-full h-full object-cover"
+            />
+          </div>
         </Link>
 
         {/* Desktop Nav */}
