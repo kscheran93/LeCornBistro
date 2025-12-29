@@ -1,0 +1,51 @@
+Create menuData.js with categories and items below. Each item needs: name, description, price, tags (array like ["V","DF"]). Use £ prices as strings.
+CATEGORY 1: POPCORN
+Classic Salted — “Light, warm, cinema-style salt.” — £3.00 — tags ["V","GF"]
+Sweet & Salty — “Balanced, addictive crunch.” — £3.50 — tags ["V","GF"]
+Caramel Gold — “Sticky caramel glaze.” — £4.00 — tags ["V","GF"]
+Choco Drizzle — “Chocolate drizzle finish.” — £4.50 — tags ["V","GF"]
+Cheddar Burst — “Cheesy flavour hit.” — £4.00 — tags ["V","GF"]
+Spicy Paprika — “Smoky heat, not too hot.” — £4.00 — tags ["V","GF"]
+CATEGORY 2: SWEETCORN CUPS
+Classic Butter & Salt — “Dairy-free option available.” — £3.50 — tags ["V"]
+Chilli & Lime — “Zesty, street-style kick.” — £4.00 — tags ["V","VG","GF"]
+Peri-Peri — “Mild/Hot choice.” — £4.00 — tags ["V","VG","GF"]
+Garlic Herb — “Comfort flavour, super popular.” — £4.00 — tags ["V","GF"]
+Mexican Style — “Creamy, tangy, spice dust.” — £4.50 — tags ["V"]
+Curry Spice — “Warm spice blend + lemon.” — £4.00 — tags ["V","VG","GF"]
+CATEGORY 3: HOT DRINKS (COFFEE & TEA)
+Espresso — “Strong and smooth.” — £2.00 — tags ["V"]
+Americano — “Bold, classic.” — £2.80 — tags ["V"]
+Latte — “Creamy comfort.” — £3.80 — tags ["V"]
+Cappuccino — “Foamy top, rich taste.” — £3.80 — tags ["V"]
+Flat White — “Silky and strong.” — £3.90 — tags ["V"]
+Tea (Builders / Earl Grey / Green) — “Ask for options.” — £2.20 — tags ["V","VG"]
+CATEGORY 4: COLD DRINKS
+Sparkling Water — £1.80 — tags ["V","VG","GF"]
+Still Water — £1.50 — tags ["V","VG","GF"]
+Canned Cola — £2.00 — tags ["V","VG","GF"]
+Lemonade — £2.00 — tags ["V","VG","GF"]
+Iced Coffee — £3.80 — tags ["V"]
+Iced Tea (Peach/Lemon) — £2.80 — tags ["V","VG","GF"]
+CATEGORY 5: CRISPS
+Ready Salted — £1.20 — tags ["V","VG"]
+Salt & Vinegar — £1.20 — tags ["V","VG"]
+Cheese & Onion — £1.20 — tags ["V"]
+Prawn Cocktail — £1.20 — tags ["V"]
+BBQ — £1.20 — tags ["V","VG"]
+Sweet Chilli — £1.20 — tags ["V","VG"]
+CATEGORY 6: SMOOTHIES
+Berry Blast — “Mixed berries + apple juice.” — £4.50 — tags ["V","VG","GF"]
+Mango Sunrise — “Mango + pineapple.” — £4.50 — tags ["V","VG","GF"]
+Green Boost — “Spinach + apple + banana.” — £4.80 — tags ["V","VG","GF"]
+Tropical Mix — “Passionfruit vibes.” — £4.80 — tags ["V","VG","GF"]
+Banana Oat — “Oats + banana (energy).” — £4.80 — tags ["V","VG"]
+Strawberry Classic — “Simple & sweet.” — £4.50 — tags ["V","VG","GF"]
+CATEGORY 7: MILKSHAKES
+Vanilla Shake — £4.50 — tags ["V"]
+Chocolate Shake — £4.80 — tags ["V"]
+Strawberry Shake — £4.80 — tags ["V"]
+Oreo Shake — £5.20 — tags ["V"]
+Banana Shake — £4.80 — tags ["V"]
+Salted Caramel Shake — £5.20 — tags ["V"]
+Add a “Make it dairy-free” note in UI: “Oat milk available for +£0.40”.
