@@ -35,9 +35,11 @@ export function Navbar() {
       <div className="container-custom flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="group relative z-50">
-          <span className="font-display text-3xl md:text-4xl font-bold text-foreground group-hover:text-accent transition-colors duration-300">
-            LeCorn<span className="text-primary text-4xl md:text-5xl">.</span>
-          </span>
+          <img 
+            src="/lecorn-logo.png" 
+            alt="LeCorn Logo" 
+            className="h-12 md:h-16 w-auto group-hover:brightness-110 transition-all duration-300"
+          />
         </Link>
 
         {/* Desktop Nav */}
