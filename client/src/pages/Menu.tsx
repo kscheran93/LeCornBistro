@@ -3,6 +3,19 @@ import { menuData } from "@/data/menuData";
 import { motion } from "framer-motion";
 
 export default function Menu() {
+  const getImageForCategory = (title: string) => {
+    switch(title) {
+      case "Sweetcorn Cups":
+        return "/corn-varieties.png";
+      case "Popcorn":
+        return "/corn-kernels.png";
+      case "Hot Drinks":
+        return "/coffee-drink.jpg";
+      default:
+        return null;
+    }
+  };
+
   return (
     <>
       <Helmet>
@@ -25,47 +38,62 @@ export default function Menu() {
 
           {/* Categories Grid */}
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
-            {menuData.map((category, index) => (
-              <motion.div
-                key={category.title}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
-                className="bg-white rounded-2xl p-8 border-2 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]"
-              >
-                <div className="flex justify-between items-baseline mb-6 border-b-2 border-primary/30 pb-4">
-                  <h2 className="text-3xl font-display font-bold">{category.title}</h2>
-                  {category.note && (
-                    <span className="text-sm font-medium text-accent italic">{category.note}</span>
-                  )}
-                </div>
+            {menuData.map((category, index) => {
+              const image = getImageForCategory(category.title);
 
-                <div className="space-y-6">
-                  {category.items.map((item, idx) => (
-                    <div key={idx} className="flex justify-between items-start group">
-                      <div>
-                        <h3 className="text-xl font-bold group-hover:text-primary transition-colors">{item.name}</h3>
-                        {item.description && (
-                          <p className="text-muted-foreground text-sm mt-1">{item.description}</p>
-                        )}
-                        {item.tags && item.tags.length > 0 && (
-                          <div className="flex gap-2 mt-2">
-                            {item.tags.map(tag => (
-                              <span key={tag} className="text-[10px] uppercase font-bold bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full border border-gray-200">
-                                {tag}
-                              </span>
-                            ))}
-                          </div>
-                        )}
-                      </div>
-                      <div className="text-lg font-bold whitespace-nowrap bg-primary/20 px-3 py-1 rounded-lg">
-                        {item.price}
-                      </div>
+              return (
+                <motion.div
+                  key={category.title}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1 }}
+                  className="bg-white rounded-2xl overflow-hidden border-2 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]"
+                >
+                  {image && (
+                    <div className="w-full h-48 overflow-hidden bg-gray-100">
+                      <img 
+                        src={image} 
+                        alt={category.title}
+                        className="w-full h-full object-cover"
+                      />
                     </div>
-                  ))}
-                </div>
-              </motion.div>
-            ))}
+                  )}
+                  <div className="p-8">
+                    <div className="flex justify-between items-baseline mb-6 border-b-2 border-primary/30 pb-4">
+                      <h2 className="text-3xl font-display font-bold">{category.title}</h2>
+                      {category.note && (
+                        <span className="text-sm font-medium text-accent italic">{category.note}</span>
+                      )}
+                    </div>
+
+                    <div className="space-y-6">
+                      {category.items.map((item, idx) => (
+                        <div key={idx} className="flex justify-between items-start group">
+                          <div>
+                            <h3 className="text-xl font-bold group-hover:text-primary transition-colors">{item.name}</h3>
+                            {item.description && (
+                              <p className="text-muted-foreground text-sm mt-1">{item.description}</p>
+                            )}
+                            {item.tags && item.tags.length > 0 && (
+                              <div className="flex gap-2 mt-2">
+                                {item.tags.map(tag => (
+                                  <span key={tag} className="text-[10px] uppercase font-bold bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full border border-gray-200">
+                                    {tag}
+                                  </span>
+                                ))}
+                              </div>
+                            )}
+                          </div>
+                          <div className="text-lg font-bold whitespace-nowrap bg-primary/20 px-3 py-1 rounded-lg">
+                            {item.price}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </motion.div>
+              );
+            })}
           </div>
 
           {/* Dietary Legend */}
