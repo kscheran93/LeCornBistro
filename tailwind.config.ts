@@ -86,6 +86,8 @@ export default {
         sans: ["var(--font-sans)"],
         serif: ["var(--font-serif)"],
         mono: ["var(--font-mono)"],
+        body: ['"DM Sans"', 'sans-serif'],
+        display: ['"Architects Daughter"', 'cursive'],
       },
       keyframes: {
         "accordion-down": {
