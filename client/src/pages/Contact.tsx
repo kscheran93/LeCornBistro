@@ -62,7 +62,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <p className="text-sm font-bold text-gray-500">Email Us</p>
-                      <a href="mailto:hello@lecorn.co.uk" className="text-lg font-bold hover:text-accent">hello@lecorn.co.uk</a>
+                      <a href="mailto:hello@lecorn.co.uk" className="text-lg font-bold hover:text-accent">info@lecorn.co.uk</a>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
@@ -71,7 +71,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <p className="text-sm font-bold text-gray-500">Call Us</p>
-                      <a href="tel:01234567890" className="text-lg font-bold hover:text-accent">01234 567 890</a>
+                      <a href="tel:01234567890" className="text-lg font-bold hover:text-accent">07393454245</a>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
